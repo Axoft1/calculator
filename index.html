@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="kalkulator" >
+
         <input id = 'textid'  placeholder="0">
         <div class="battons">
             <div onclick="ac()" class="batton rg ac">AC</div>
-            <div class="batton skobki bl ">()</div>
+            <div onclick="input('(')" class="batton skobki bl ">()</div>
             <div onclick="input('%')" class="batton persent bl ">%</div>
             <div onclick="input('/')" class="batton division bl ">/</div>
     
@@ -33,7 +34,7 @@
     
             <div onclick="input(0)" class="batton zero">0</div>
             <div onclick="input('.')" class="batton dot">.</div>
-            <div onclick="beckspace()" class="batton beckspace">X</div>
+            <div onclick="beckspace()" class="batton beckspace"  ><img class="img beckspace" src="img/clear.png"  alt=""></div>
             <div onclick="equal()" class="batton equal bj">=</div>
         </div>
     </div>
