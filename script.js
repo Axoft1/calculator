@@ -7,6 +7,18 @@ function input (num) { // отображает в строке ввода наж
     textid.value = expreshion;
 }
 
+function brace() {
+    const braces = textid.value.split("");
+    const left_brace = braces.filter(el => el=== "(").length;
+    const right_brace = braces.filter(el => el === ")").length;
+  
+    if (left_brace > right_brace) {
+      input(")");
+    } else {
+      input("(");
+    }
+  }
+  
 function ac() { // обнуляет строку ввода
     expreshion = '';
     textid.value = expreshion;
