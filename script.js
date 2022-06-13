@@ -1,17 +1,17 @@
 
 var textid = document.getElementById('textid')
-let expreshion = '';
+let expression = '';
 
 function input (num) { // отображает в строке ввода нажимаемые цифры
-    expreshion += num;
-    textid.value = expreshion;
+    expression += num;
+    textid.value = expression;
 }
 
 function brace() {
     const braces = textid.value.split("");
     const left_brace = braces.filter(el => el=== "(").length;
     const right_brace = braces.filter(el => el === ")").length;
-  
+    
     if (left_brace > right_brace) {
       input(")");
     } else {
@@ -20,18 +20,20 @@ function brace() {
   }
   
 function ac() { // обнуляет строку ввода
-    expreshion = '';
-    textid.value = expreshion;
+    expression = '';
+    textid.value = expression;
 }
 
 function equal () { // выводит результат выражения
     if(textid.value !== ''){
         textid.value = eval (textid.value);
     }  
+    expression = '';
 }
-function beckspace() { // удаляет последний символ
+
+function backspace() { // удаляет последний символ
     let value = document.getElementById("textid").value;
     textid.value = value.substr(0, value.length - 1);
-    expreshion = textid.value
+    expression = textid.value
 }
 

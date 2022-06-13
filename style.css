@@ -1,4 +1,4 @@
-.kalkulator {
+.calkulator {
     width: 300px;
     height: 480px;
     background: rgb(10, 10, 10);
@@ -19,7 +19,7 @@
     font-size: 4rem;
 }
 
-.battons {
+.buttons {
     margin: 10px;
     display: grid;
     grid-template-areas: 
@@ -31,7 +31,7 @@
     grid-gap: 7px;
     justify-items: center;
 }
-.batton {
+.button {
     width: 60px;
     height: 60px;
     background: #333;
@@ -41,22 +41,22 @@
     line-height: 58px;
     user-select: none;
 }
-.batton:hover{
+.button:hover{
     filter: brightness(120%);
 }
-.batton:active{
+.button:active{
     filter: brightness(80%);
 }
-.batton.rg {
+.button.rg {
     background: rgb(130, 68, 212);
 }
-.batton.bl {
+.button.bl {
     background: rgba(93, 169, 240, 0.774);
 }
-.batton.bj{
+.button.bj{
     background: rgba(32, 182, 241, 0.589);
 }
-.img.beckspace{
+.img.backspace{
 padding: 15px;
 width: 30px;
 height: 30px;
