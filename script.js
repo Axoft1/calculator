@@ -31,13 +31,9 @@ function equal () { // выводит результат выражения
     expression = '';
 }
 
-// function alphabetPosition(text) {
-//   return console.log( text
-//   .toUpperCase()
-//   .match(/[a-z]/gi)
-//   .map((c) => c.charCodeAt()-64) //Метод charCodeAt() возвращает числовое значение Юникода для символа 
-//   .join(' ')
-//   )
-// }
-// alphabetPosition("tT A  bcdt")
+function beckspace() { // удаляет последний символ
+  let value = document.getElementById("textid").value;
+  textid.value = value.substr(0, value.length - 1);
+  expreshion = textid.value
+}
 
